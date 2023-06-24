@@ -8,6 +8,7 @@ export const Container = styled.div`
 
 export const CallToActionStyled = styled.section`
   background-color: var(--color-blue-100);
+  padding-top: 30px;
   .content {
     display: flex;
     align-items: center;
@@ -44,11 +45,11 @@ export const CallToActionStyled = styled.section`
         color: var(--color-white);
         border: var(--color-blue-300);
         border-radius: 50px;
-        transition: 0.5s ease
+        transition: 0.5s ease;
       }
       button:hover {
         opacity: 0.8;
-        transition: 0.5s ease
+        transition: 0.5s ease;
       }
     }
 

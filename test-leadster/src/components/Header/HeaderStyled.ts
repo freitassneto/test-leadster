@@ -13,9 +13,4 @@ export const HeaderStyled = styled.header`
   justify-content: center;
   padding: 10px 0;
   height: 80px;
-
-  img {
-    height: 30px;
-    width: 140px;
-  }
 `;

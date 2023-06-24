@@ -6,7 +6,7 @@ import logo from "../../assets/images/logo.png"
 export const Header = () => {
   return (
     <HeaderStyled>
-      <Image src={logo} alt={"Logo Leadster"} />
+      <Image src={logo} alt={"Logo Leadster"} height={30}/>
     </HeaderStyled>
   );
 };
