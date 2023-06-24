@@ -4,6 +4,7 @@ export default createGlobalStyle`
    :root {
     --color-black: #000000;
     --color-white: #FFFFFF;
+    --color-gray: #627397;
 
     --color-dark-blue: #1c3c50;
     --color-blue-300: #1f76f0;
@@ -46,6 +47,10 @@ export default createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6, strong{
     font-weight: 500;
+  }
+
+  li {
+    list-style: none;
   }
 
   button {
