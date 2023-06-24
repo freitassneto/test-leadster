@@ -45,7 +45,7 @@ export default createGlobalStyle`
     font-size: 1.6rem;
   }
 
-  h1, h2, h3, h4, h5, h6, strong{
+  h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
   }
 
