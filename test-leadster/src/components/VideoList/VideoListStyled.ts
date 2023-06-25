@@ -65,6 +65,10 @@ export const VideoListStyled = styled.section`
     }
   }
 
+  .buttonCard {
+    border: none;
+  }
+
   .videoList {
     display: flex;
     justify-content: space-between;

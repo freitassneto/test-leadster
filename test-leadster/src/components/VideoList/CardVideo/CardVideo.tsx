@@ -8,9 +8,10 @@ export interface iCardVideoProps {
   title: string;
   description: string;
   url: string;
+  onClick: any;
 }
 
-export const CardVideo = ({ title }: iCardVideoProps) => {
+export const CardVideo = ({ title, description, url, onClick }: iCardVideoProps) => {
   return (
     <CardVideoStyled>
       <FaPlay className="playButton"/>

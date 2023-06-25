@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, PageButton, VideoListStyled } from "./VideoListStyled";
 import videoList from "../../database/database.json";
 import { CardVideo } from "./CardVideo/CardVideo";
+import { ModalContent } from "../Modals/ModalContent";
 
 export const VideoList = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  const handleCardClick = (card: any) => {
+    setSelectedCard(card);
+  };
+
+  const toggleModal = () => {
+    setIsOpenModal(!isOpenModal);
+  };
+
   return (
     <VideoListStyled>
       <Container>
@@ -31,14 +43,17 @@ export const VideoList = () => {
         <div className="line"></div>
         <ul className="videoList">
           {videoList.videos.map((video) => (
-            <CardVideo
-              key={video.id}
-              title={video.titulo}
-              description={video.titulo}
-              url={video.url}
-            />
+            <button className="buttonCard" type="button" key={video.id} onClick={toggleModal}>
+              <CardVideo
+                title={video.titulo}
+                description={video.titulo}
+                url={video.url}
+                onClick={handleCardClick}
+              />
+            </button>
           ))}
         </ul>
+        {isOpenModal && <ModalContent toggleModal={toggleModal} />}
         <div className="line"></div>
         <PageButton>
           <p>Página</p>
