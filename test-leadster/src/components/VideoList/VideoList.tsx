@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, VideoListStyled } from "./VideoListStyled";
+import { Container, PageButton, VideoListStyled } from "./VideoListStyled";
 import videoList from "../../database/database.json";
 import { CardVideo } from "./CardVideo/CardVideo";
 
@@ -27,13 +27,26 @@ export const VideoList = () => {
               <option value="">Janeiro</option>
             </select>
           </div>
-          <div className="line"></div>
         </div>
+        <div className="line"></div>
         <ul className="videoList">
           {videoList.videos.map((video, index) => (
-            <CardVideo key={index} title={video.titulo} />
+            <CardVideo
+              key={index}
+              title={video.titulo}
+              description={video.titulo}
+              url={video.url}
+            />
           ))}
         </ul>
+        <div className="line"></div>
+        <PageButton>
+          <p>Página</p>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+        </PageButton>
       </Container>
     </VideoListStyled>
   );

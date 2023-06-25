@@ -29,7 +29,7 @@ export const VideoListStyled = styled.section`
         background-color: transparent;
 
         padding: 10px 16px;
-        font-size: 14px;
+        font-size: 1.4rem;
 
         transition: ease 0.5s;
       }
@@ -41,8 +41,9 @@ export const VideoListStyled = styled.section`
         scale: 1.05;
       }
 
-      button:active {
+      button:focus {
         background-color: var(--color-blue-300);
+        border: 1px solid var(--color-blue-300);
         color: var(--color-white);
       }
     }
@@ -69,9 +70,46 @@ export const VideoListStyled = styled.section`
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .line {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 20px;
+  }
+`;
+
+export const PageButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: transparent;
+    background-color: transparent;
+
+    padding: 5px 10px;
+    font-size: 1.4rem;
+
+    transition: ease 0.5s;
+  }
+
+  button:focus {
+    border: 1px solid var(--color-blue-300);
+    border-radius: 8px;
+    color: var(--color-blue-300);
+    font-weight: 600;
+    transition: ease 0.5s;
   }
 `;
