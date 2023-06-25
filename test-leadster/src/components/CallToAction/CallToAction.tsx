@@ -23,7 +23,7 @@ export const CallToAction = () => {
             </p>
             <div className="line"></div>
             <div className="ctaDiv">
-              <button>VER DEMONSTRAÇÃO</button>
+              <a href="https://leadster.com.br/">VER DEMONSTRAÇÃO</a>
               <Image
                 src={seloRd}
                 alt="Selo Top 10 Apps mais usados RD Station"

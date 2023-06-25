@@ -39,15 +39,16 @@ export const CallToActionStyled = styled.section`
       display: flex;
       align-items: center;
       gap: 20px;
-      button {
+      a {
         background-color: var(--color-blue-300);
         padding: 20px 30px;
         color: var(--color-white);
         border: var(--color-blue-300);
         border-radius: 50px;
         transition: 0.5s ease;
+        cursor: pointer;
       }
-      button:hover {
+      a:hover {
         opacity: 0.8;
         transition: 0.5s ease;
       }
