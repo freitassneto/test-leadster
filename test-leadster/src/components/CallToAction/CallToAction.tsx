@@ -32,8 +32,10 @@ export const CallToAction = () => {
             </div>
             <div className="footerContent">
               <p>
-                <Image src={noCard} height={12} alt="Ícone Cartão de Crédito" /> Não é necessário cartão de crédito |{" "}
-                <Image src={rating} height={12} alt="Avaliação" /> 4.9/5 média de satisfação
+                <Image src={noCard} height={12} alt="Ícone Cartão de Crédito" />{" "}
+                Não é necessário cartão de crédito |{" "}
+                <Image src={rating} height={12} alt="Avaliação" /> 4.9/5 média
+                de satisfação
               </p>
             </div>
           </div>

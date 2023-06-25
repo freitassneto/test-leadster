@@ -19,20 +19,20 @@ export const VideoList = () => {
             <p>Ordenar por</p>
             <select name="select" id="select">
               <option value="">Data de publicação</option>
-              <option value="">Junho</option>
-              <option value="">Maio</option>
-              <option value="">Abril</option>
-              <option value="">Março</option>
-              <option value="">Fevereiro</option>
-              <option value="">Janeiro</option>
+              <option value="Junho">Junho</option>
+              <option value="Maio">Maio</option>
+              <option value="Abril">Abril</option>
+              <option value="Março">Março</option>
+              <option value="Fevereiro">Fevereiro</option>
+              <option value="Janeiro">Janeiro</option>
             </select>
           </div>
         </div>
         <div className="line"></div>
         <ul className="videoList">
-          {videoList.videos.map((video, index) => (
+          {videoList.videos.map((video) => (
             <CardVideo
-              key={index}
+              key={video.id}
               title={video.titulo}
               description={video.titulo}
               url={video.url}
