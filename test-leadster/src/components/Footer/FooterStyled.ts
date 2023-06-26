@@ -75,7 +75,17 @@ export const FooterStyled = styled.footer`
       font-size: 11px;
       color: var(--color-gray);
     }
-    @media (max-width: 800px) {
+  }
+  @media (max-width: 800px) {
+    section {
+      gap: 14px;
+      flex-wrap: wrap;
+
+      ul {
+        margin-top: 16px;
+      }
+    }
+    .botFooter {
       flex-direction: column;
       gap: 10px;
       align-items: center;

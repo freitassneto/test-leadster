@@ -14,6 +14,12 @@ export const CallToActionStyled = styled.section`
     align-items: center;
     justify-content: center;
     gap: 15px;
+
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+      gap: 10px;
+      align-items: center;
+    }
   }
 
   .infoContent {
@@ -58,6 +64,35 @@ export const CallToActionStyled = styled.section`
       p {
         font-size: 14px;
         color: var(--color-dark-blue);
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .infoContent {
+      h3 {
+        font-size: 30px;
+      }
+      P {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ctaDiv{
+      a {
+        text-align: center;
+        font-size: 12px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }

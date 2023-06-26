@@ -12,7 +12,7 @@ export const CallToAction = () => {
       <Container>
         <div className="content">
           <div>
-            <Image src={comparativo} alt={""} width={500} />
+            <Image src={comparativo} alt={""} width={450} className="image"/>
           </div>
           <div className="infoContent">
             <h3>

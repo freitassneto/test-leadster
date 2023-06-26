@@ -38,4 +38,57 @@ export const BigBannerStyled = styled.div`
   strong {
     font-weight: 800;
   }
+
+  @media (max-width: 700px) {
+    p {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 40px;
+    }
+    h2 {
+      position: relative;
+      font-size: 60px;
+      font-weight: 700;
+      color: var(--color-blue-300);
+    }
+  }
+
+  @media (max-width: 540px) {
+    p, span {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    h2 {
+      position: relative;
+      font-size: 50px;
+      font-weight: 700;
+      color: var(--color-blue-300);
+    }
+    img {
+      height: 24px;
+      width: 30px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    p, span {
+      font-size: 10px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h2 {
+      position: relative;
+      font-size: 34px;
+      font-weight: 700;
+      color: var(--color-blue-300);
+    }
+    img {
+      height: 16px;
+      width: 25px;
+    }
+  }
 `;
