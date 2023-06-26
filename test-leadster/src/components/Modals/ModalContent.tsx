@@ -49,7 +49,7 @@ export const ModalContent = ({ toggleModal }: ModalContentProps) => {
               X
             </button>
             <div>
-              <YouTubeVideo videoId="LG_3WyaiHFY" />
+              <YouTubeVideo videoId="LG_3WyaiHFY?t=250" />
             </div>
             <div>
               <h4>Descrição</h4>
