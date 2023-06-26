@@ -63,6 +63,14 @@ export const VideoListStyled = styled.section`
         cursor: pointer;
       }
     }
+
+    @media (max-width: 1045px) {
+      flex-direction: column;
+      align-items: flex-start;
+      ul {
+        flex-wrap: wrap;
+      }
+    }
   }
 
   .buttonCard {
@@ -76,6 +84,10 @@ export const VideoListStyled = styled.section`
     gap: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    @media (max-width: 1045px) {
+      justify-content: center;
+    }
   }
 
   .line {
