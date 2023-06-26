@@ -41,7 +41,7 @@ export default createGlobalStyle`
   }
 
   body, input, button, textarea {
-    font-family: Open-Sans, Helvetica, Sans-Serif;
+    font-family: "Plus Jakarta Sans", Sans-Serif;
     font-size: 1.6rem;
   }
 

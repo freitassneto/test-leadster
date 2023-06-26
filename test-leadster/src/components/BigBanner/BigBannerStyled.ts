@@ -23,22 +23,19 @@ export const BigBannerStyled = styled.div`
     font-size: 50px;
   }
 
-  div {
-    position: static;
-    border-bottom: 1px solid lightgray;
-
-    img {
-      position: absolute;
-      right: 0;
-    }
-    h2 {
-      font-size: 80px;
-      font-weight: 600;
-      color: var(--color-blue-300);
-    }
+  img {
+    position: absolute;
+    top: 0;
+    right: 1;
+  }
+  h2 {
+    position: relative;
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--color-blue-300);
   }
 
   strong {
-    font-weight: 600;
+    font-weight: 800;
   }
 `;
