@@ -1,4 +1,3 @@
-import "@/styles/GlobalStyle.ts";
 import GlobalStyle from "@/styles/GlobalStyle";
 import type { AppProps } from "next/app";
 
